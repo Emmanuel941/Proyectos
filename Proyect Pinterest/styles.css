@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(252, 252, 252);
+}
+
+.container{
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.container .box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.Botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.link{
+    background-color: rgb(255, 255, 255);
+    padding: 0 5px;
+    width: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones{
+    list-style-type: none;
+    border-radius: 20px;
+    padding: 0 8px;
+    color: blue;
+}
+.opciones:hover{
+    background-color: rgb(192, 81, 81);
+    border-radius: 20px;
+    padding: 0 8px;
+}
+.compartir{
+    list-style-type: none;
+    border-radius: 20px;
+    padding: 0 8px;
+    color: blue;
+}
+.compartir:hover{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 8px;
+    color: blue;
+}
+
+.entrada{
+    background-color: rgba(128, 128, 128, 0.781);
+    border: none;
+    outline: none;
+    color: black;
+    width: 550px;
+    height: 15px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.Buscador{
+    position: relative;
+    padding: 4px;
+}
+
+.icono{
+    font-size: 30px;
+    padding: 4px;
+}
+
+.recuadro:hover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.box{
+    position: relative;
+}
+
+.recuadro{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.433);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.recuadro:hover{
+    opacity: 1;
+}
+
+.guardar{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    padding: 8px;
+    border-radius: 12px;
+}
+.guardar:hover {
+    background-color: red;
+}
+.recuadro-inferior{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    border-radius: 12px;
+}
+
+.op{
+    background-color: rgb(255, 255, 255);
+    padding: 0 5px;
+    width: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px)
+{
+    .container
+    {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        columns: 2;
+    }
+    
+    .entrada{
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    .container
+    {
+        columns: 1;
+    }
+    
+    .entrada{
+        width: 70px;
+    }
+}
